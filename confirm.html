@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Home</title>
+  </head>
+  <body class="bg-[#FAFAFA]">
+    <div class="lg:px-8 px-2">
+      <div class="lg:py-4 py-2">
+        <div
+          class="bg-[#FFFFFF] flex items-center justify-between drop-shadow-sm rounded-xl lg:p-8 p-4"
+        >
+          <div>
+            <h2 class="logo lg:text-3xl text-xl font-bold">Metlic</h2>
+          </div>
+          <div class="flex">
+            <div class="p-4 bg-[#F7F7F7] rounded-lg">
+              <img width="22px" src="./image/CartNav.svg" alt="cart-icon" />
+            </div>
+            <div class="flex ml-2 rounded-lg items-center p-4 bg-[#F7F7F7]">
+              <img width="25px" src="./image/usernav.svg" alt="User-icon" />
+              <h4 class="flex ml-2">
+                Hello,<span class="hello mx-2">Jhon</span
+                ><img width="20px" src="./image/arrowdownnav.svg" alt="arrow" />
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- This is track System -->
+      <div class="lg:px-24 mt-6 lg:mt-0">
+        <div class="bg-[#FFFFFF] h-full drop-shadow-md rounded-xl p-6">
+          <div class="my-10 flex flex-col items-center justify-center">
+            <img class="con_img" src="./image/confirm.svg" />
+            <!-- <lottie-player
+              src="https://assets7.lottiefiles.com/packages/lf20_vuliyhde.json"
+              background="transparent"
+              speed="1"
+              style="width: 300px; height: 300px"
+              hover
+              autoplay
+            ></lottie-player> -->
+
+            <h3 class="mt-12 con_fir_text">Your payment is succesfull</h3>
+            <h4 class="mt-4 con_sec">
+              Your order tracking code is <span>#ZOR-58231</span>
+            </h4>
+            <h4 class="mt-1 con_sec">
+              You can track your order through your order history
+            </h4>
+            <a href=".">
+              <div class="mt-10 bg-white text-right">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center">
+                    <button
+                      class="pr-1 pl-6 flex items-center justify-between bg-[#118834] h-11 tracking-wide rounded-md add_new_btn w-40"
+                    >
+                      Track Order
+                      <div
+                        class="flex items-center justify-center rounded-md w-9 bg-[#299549] h-9"
+                      >
+                        <img
+                          class="img_plus"
+                          width="24px"
+                          src="image/add_arrow_right.svg"
+                        />
+                      </div>
+                    </button>
+                  </div>
+                  <!-- Add new Address Button End -->
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </body>
+</html>

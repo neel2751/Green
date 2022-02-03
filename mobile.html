@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Cart</title>
+  </head>
+  <body></body>
+</html>
+<div
+  class="bg-[#FFFFFF] flex items-center justify-between drop-shadow-sm rounded-xl p-4"
+>
+  <div>
+    <h2 class="logo text-md font-bold">Metlic</h2>
+  </div>
+  <div class="flex items-center justify-center">
+    <label>
+      <input
+        class="search appearance-none rounded pl-8 p-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        name="serach"
+        type="text"
+        placeholder="Search in Amazing Product..."
+      />
+    </label>
+  </div>
+  <div>
+    <div class="sm:block hidden flex">
+      <div class="p-4 bg-[#F7F7F7] rounded-lg">
+        <img width="22px" src="./image/CartNav.svg" alt="cart-icon" />
+      </div>
+      <div class="flex ml-2 rounded-lg items-center p-4 bg-[#F7F7F7]">
+        <img width="25px" src="./image/usernav.svg" alt="User-icon" />
+        <h4 class="flex ml-2">
+          Hello,<span class="hello mx-2">Jhon</span
+          ><img width="20px" src="./image/arrowdownnav.svg" alt="arrow" />
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="">
+  <div
+    class="bg-[#FFFFFF] flex items-center justify-between drop-shadow-sm rounded-xl py-4 px-2"
+  >
+    <div class="flex items-center">
+      <div class="mr-1 cart-round rounded-full bg-[#F7F7F7] p-2">
+        <img width="12px" src="./image/trackcart.svg" alt="cart" />
+      </div>
+      <h3 class="track_cart">Your Cart</h3>
+    </div>
+    <hr class="first_line" />
+    <svg
+      style="margin: -22px -17px -20px -14px; /* margin: -20px; */ height: 9px"
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-6 w-6"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="#128935"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M9 5l7 7-7 7"
+      ></path>
+    </svg>
+    <hr class="second_line mx-1" />
+    <div class="flex items-center">
+      <div class="mr-1 rounded-full bg-[#F7F7F7] p-2">
+        <img width="17px" src="./image/shipping.svg" alt="cart" />
+      </div>
+      <h3 class="track_shipping">Shipping Detail</h3>
+    </div>
+    <hr class="third_line mx-1" />
+    <div class="flex items-center">
+      <div class="mr-1 rounded-full bg-[#F7F7F7] p-2">
+        <img width="17px" src="./image/payment.svg" alt="cart" />
+      </div>
+      <h3 class="track_shipping">Payment</h3>
+    </div>
+  </div>
+</div>
+
+<div class="flex pt-8 pb-1 px-1 w-full">
+  <h3 class="title w-8/12">Products</h3>
+  <h3 class="title w-16">QTY</h3>
+  <h3 class="title w-12">Price</h3>
+  <h3 class="title">Delete</h3>
+</div>
+<div class="main_product w-full">
+  <!-- First Product -->
+  <div class="flex py-2">
+    <div class="bg-[#FFFFFF] drop-shadow rounded-lg py-2 px-2">
+      <div class="flex justify-evenly items-center">
+        <img class="py-2" width="20px" src="./products/Temp.png" alt="user" />
+        <div>
+          <h3 class="w-36 truncate product_name ml-2">
+            Orange and Apple Smoothie, 150ml
+          </h3>
+          <div class="flex items-center ml-2 pt-1">
+            <h3 class="unit">Unit Price.</h3>
+            <h3 class="unit_price ml-2">₹120.00</h3>
+            <h3 class="unit_overprice ml-2">₹180.00</h3>
+          </div>
+        </div>
+        <div class="w-28 flex justify-center">
+          <div class="flex rounded-md p-1 border">
+            <div class="flex">
+              <img
+                width="20px"
+                class="fill-current text-gray-600 w-3 bg-[#FAFAFA]"
+                src="./image/plus.svg"
+              />
+
+              <input
+                class="mx-1 product_price text-center w-3"
+                type="text"
+                value="1"
+              />
+              <img
+                width="20px"
+                class="fill-current text-gray-600 w-3 bg-[#FAFAFA]"
+                src="./image/minus.svg"
+              />
+            </div>
+          </div>
+          <!-- <h3 class="ml-6">Product Name</h3> -->
+        </div>
+        <div class="flex items-center">
+          <h3 class="product_price w-14 text-sm items-center">
+            ₹<span class="product_price ml-1 w-12">120</span>
+          </h3>
+          <img
+            width="16px"
+            class="ml-4"
+            src="./image/delete.svg"
+            alt="Delete"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Product -->
+  <div class="flex py-2">
+    <div class="bg-[#FFFFFF] drop-shadow rounded-lg py-2 px-6">
+      <div class="flex justify-evenly items-center">
+        <img class="py-2" width="40px" src="./products/Temp.png" alt="user" />
+        <div style="width: 23rem">
+          <h3 class="product_name ml-8">
+            Sunscreen soultion containing almond extract and honey for oily skin
+          </h3>
+          <div class="flex items-center ml-8 pt-2">
+            <h3 class="unit">Unit Price.</h3>
+            <h3 class="unit_price ml-2">₹120.00</h3>
+            <h3 class="unit_overprice ml-2">₹180.00</h3>
+          </div>
+        </div>
+        <div class="w-56 flex justify-center">
+          <div class="flex rounded-md p-1 border">
+            <div class="flex">
+              <img
+                width="20px"
+                class="fill-current text-gray-600 w-6 bg-[#FAFAFA]"
+                src="./image/plus.svg"
+              />
+
+              <input
+                class="mx-2 product_price text-center w-8"
+                type="text"
+                value="1"
+              />
+              <img
+                width="20px"
+                class="fill-current text-gray-600 w-6 bg-[#FAFAFA]"
+                src="./image/minus.svg"
+              />
+            </div>
+          </div>
+          <!-- <h3 class="ml-6">Product Name</h3> -->
+        </div>
+        <div class="flex items-center">
+          <h3 class="product_price w-28 text-sm items-center">
+            ₹<span class="product_price ml-1 w-28">1,50,000</span>
+          </h3>
+          <img
+            width="26px"
+            class="ml-4"
+            src="./image/delete.svg"
+            alt="Delete"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Third Product -->
+  <div class="flex py-2">
+    <div class="bg-[#FFFFFF] drop-shadow rounded-lg py-2 px-6">
+      <div class="flex justify-evenly items-center">
+        <img class="py-2" width="40px" src="./products/Temp.png" alt="user" />
+        <div style="width: 23rem">
+          <h3 class="product_name ml-8">
+            Sunscreen soultion containing almond extract and honey for oily skin
+          </h3>
+          <div class="flex items-center ml-8 pt-2">
+            <h3 class="unit">Unit Price.</h3>
+            <h3 class="unit_price ml-2">₹120.00</h3>
+            <h3 class="unit_overprice ml-2">₹180.00</h3>
+          </div>
+        </div>
+        <div class="w-56 flex justify-center">
+          <div class="flex rounded-md p-1 border">
+            <div class="flex">
+              <img
+                width="20px"
+                class="fill-current text-gray-600 w-6 bg-[#FAFAFA]"
+                src="./image/plus.svg"
+              />
+
+              <input
+                class="mx-2 product_price text-center w-8"
+                type="text"
+                value="1"
+              />
+              <img
+                width="20px"
+                class="fill-current text-gray-600 w-6 bg-[#FAFAFA]"
+                src="./image/minus.svg"
+              />
+            </div>
+          </div>
+          <!-- <h3 class="ml-6">Product Name</h3> -->
+        </div>
+        <div class="flex items-center">
+          <h3 class="product_price w-28 text-sm items-center">
+            ₹<span class="product_price ml-1 w-28">1,50,000</span>
+          </h3>
+          <img
+            width="26px"
+            class="ml-4"
+            src="./image/delete.svg"
+            alt="Delete"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fourth Product -->
+</div>
+
+<div class="cart_main py-2 w-full">
+  <div class="bg-[#FFFFFF] drop-shadow rounded-lg">
+    <div class="py-4 px-3 flex items-center justify-between">
+      <h3 class="cart_summary">Cart Summary</h3>
+      <div class="bg-[#FAFAFA] rounded-md">
+        <h3 class="product_price text-md py-1 px-2">
+          4 <span style="font-size: 13px; font-weight: 600">items</span>
+        </h3>
+      </div>
+    </div>
+
+    <!-- First Subtotal -->
+    <div class="px-4 flex items-center justify-between">
+      <h3 class="total">Subtotal</h3>
+      <h3 class="product_price font-medium text-base py-1 px-2">
+        ₹ <span class="side_price text-md">350</span>
+      </h3>
+    </div>
+    <!-- You Save -->
+    <div class="px-4 flex items-center justify-between">
+      <h3 class="total">You Save</h3>
+      <h3 class="product_price font-medium text-base py-1 px-2">
+        ₹ <span class="side_save text-md">100</span>
+      </h3>
+    </div>
+    <hr class="line_total" />
+    <div class="px-4 flex items-center justify-between">
+      <h3 class="total">Order Summary</h3>
+      <h3 class="product_price font-medium text-base py-1 px-2">
+        ₹ <span class="side_price">254</span>
+      </h3>
+    </div>
+    <div class="px-4 flex items-center justify-between">
+      <h3 class="total">Shipping</h3>
+      <h3 class="product_price font-medium text-base py-1 px-2">
+        ₹ <span class="side_price text-lg">40</span>
+      </h3>
+    </div>
+    <div class="relative">
+      <div class="icon"></div>
+      <hr class="line_total" />
+    </div>
+    <div class="px-4 flex items-center justify-between">
+      <h3 class="last_total">Total</h3>
+      <h3 class="product_price font-medium text-base py-1 px-2">
+        ₹ <span class="side_price text-xl">274</span>
+      </h3>
+    </div>
+    <div class="px-4 py-2 flex items-center justify-center">
+      <button
+        class="pr-1 pl-10 flex items-center justify-between bg-[#118834] h-12 tracking-wide rounded-lg checkout w-56"
+      >
+        CHECKOUT
+        <div
+          class="flex items-center justify-center rounded-lg w-10 bg-[#299549] h-10"
+        >
+          <img width="22px" src="image/arrowright.svg" />
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+
+.track_cart { color: #2a954a; font-weight: 600; font-size: 9px; letter-spacing:
+-0.5px; } .first_line { border: none; border-top: 1.5px dashed #128935; left: 0;
+right: 0; color: #fff; background-color: #fff; height: 3px; width: 5%; } svg{
+margin: -22px -17px -20px -14px; /* margin: -20px; */ height: 9px; }
+.second_line { border: none; border-top: 1.5px dashed #959c9c; left: 0;
+margin-right: 1px; right: 0; color: #fff; background-color: #fff; height: 3px;
+width: 5%; } .track_shipping { color: #959c9c; font-weight: 600; font-size: 9px;
+letter-spacing: -0.5px; } .title { font-weight: 500; font-size: 10px; color:
+#4b5054; } .product_name { color: #34393c; font-weight: 700; font-size: 8px; }
+.unit { font-size: 9px; font-weight: 500; color: #5b6063; } .unit_price { color:
+#34393c; font-weight: 700; font-size: 10px; } .unit_overprice { text-decoration:
+line-through; color: #959c9c; font-weight: 500; font-size: 9px; }
+input[type="text"] { color: #32393b; font-weight: 600; font-size: 12px; }
+.product_price { color: #34393c; font-weight: 700; font-size: 13px; }
+.cart_summary { color: #011507; font-weight: 700; font-size: 13px; }
+.product_price { color: #34393c; font-weight: 700; font-size: 13px; } .total {
+font-size: 12px; font-weight: 600; color: #4b5053; } .side_save { color:
+#c11a1a; font-weight: 700; font-size: 15px; } .line_total { border-top: 2px
+dashed #e8e9e9; margin: 5px 25px 5px 15px; height: 3px; } .last_total { color:
+#4b5053; font-weight: 700; font-size: 15px; } .checkout { font-size: 14px;
+font-weight: 700; color: white; }

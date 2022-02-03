@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Shipping</title>
+  </head>
+  <body class="bg-[#FAFAFA]">
+    <div class="px-8">
+      <div class="py-4">
+        <div
+          class="bg-[#FFFFFF] flex items-center justify-between drop-shadow-sm rounded-xl p-8"
+        >
+          <div>
+            <h2 class="logo text-3xl font-bold">Metlic</h2>
+          </div>
+          <div class="flex">
+            <div class="p-4 bg-[#F7F7F7] rounded-lg">
+              <img width="22px" src="./image/CartNav.svg" alt="cart-icon" />
+            </div>
+            <div class="flex ml-2 rounded-lg items-center p-4 bg-[#F7F7F7]">
+              <img width="25px" src="./image/usernav.svg" alt="User-icon" />
+              <h4 class="flex ml-2">
+                Hello,<span class="hello mx-2">Jhon</span
+                ><img width="20px" src="./image/arrowdownnav.svg" alt="arrow" />
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- This is track System -->
+      <div class="px-24">
+        <div
+          class="bg-[#FFFFFF] flex items-center justify-center drop-shadow-sm rounded-xl p-6"
+        >
+          <div class="flex items-center">
+            <div class="mr-4 cart-round rounded-full bg-[#2A954A] p-2">
+              <img width="22px" src="./image/success.svg" alt="cart" />
+            </div>
+            <h3 class="track_cart">Your Cart</h3>
+          </div>
+          <hr class="shipping_first_line mx-2" />
+
+          <div class="flex items-center">
+            <div class="mr-4 cart-round rounded-full bg-[#F7F7F7] p-4">
+              <img width="22px" src="./image/trackshipping.svg" alt="cart" />
+            </div>
+            <h3 class="shipping_track_shipping">Shipping Detail</h3>
+          </div>
+          <hr class="shipping_third_line mx-2" />
+          <svg
+            style="margin: -15px; height: 15px"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="#128935"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+          <hr class="second_line mx-2" />
+          <div class="flex items-center">
+            <div class="mr-4 rounded-full bg-[#F7F7F7] p-4">
+              <img width="22px" src="./image/payment.svg" alt="cart" />
+            </div>
+            <h3 class="track_shipping">Payment</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cart Items -->
+      <div class="flex px-24">
+        <div class="w-2/3 py-2">
+          <div class="px-4 py-5 bg-white rounded-lg drop-shadow sm:p-6">
+            <div class="flex items-center">
+              <div class="h-4 w-2 bg-[#FED500]"></div>
+              <h3 class="ml-2 shipping_title">Shipping Address</h3>
+            </div>
+            <div class="mt-2 bg-white text-right">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                  <button
+                    class="pr-1 pl-4 flex items-center justify-between bg-[#118834] h-10 tracking-wide rounded-md add_new_btn w-48"
+                  >
+                    ADD NEW ADDRESS
+                    <div
+                      class="flex items-center justify-center rounded-md w-8 bg-[#299549] h-8"
+                    >
+                      <img
+                        class="img_plus"
+                        width="24px"
+                        src="image/add_plus.svg"
+                      />
+                    </div>
+                  </button>
+                </div>
+                <!-- Add new Address Button End -->
+              </div>
+            </div>
+            <!-- First Address Start -->
+            <div class="mt-4 flex items-center bg-[#FAFAFA] rounded p-4">
+              <div class="mr-2 flex items-center rounded-full bg-[#2A954A] p-1">
+                <img width="12px" src="image/success.svg" />
+              </div>
+              <h3 class="summ_name w-20">Jhon Doe</h3>
+              <h3 class="ml-2 w-9/12 address_desc">
+                144 New tower near, Delhi, India, 420145
+              </h3>
+              <div class="flex">
+                <h3 class="add_edit">Edit</h3>
+                <div class="centerdiv"></div>
+                <h3 class="add_del">Delete</h3>
+              </div>
+            </div>
+            <!-- Second Address Start -->
+            <div class="mt-6 flex items-center bg-[#FAFAFA] rounded p-4">
+              <div class="mr-2 flex items-center rounded-full bg-[#2A954A] p-1">
+                <img width="12px" src="image/success.svg" />
+              </div>
+              <h3 class="summ_name w-20">Vicky Patel</h3>
+              <h3 class="ml-2 w-9/12 address_desc">
+                B-26 behind Bazar, BilasPur, India, 384213
+              </h3>
+              <div class="flex items-center">
+                <h3 class="add_edit">Edit</h3>
+                <div class="centerdiv"></div>
+                <h3 class="add_del">Delete</h3>
+              </div>
+            </div>
+            <!-- Third address start  -->
+            <div class="mt-6 flex items-center bg-[#FAFAFA] rounded p-4">
+              <div class="mr-2 flex items-center rounded-full bg-[#2A954A] p-1">
+                <img width="12px" src="image/success.svg" />
+              </div>
+              <h3 class="summ_name w-20">Meet Shah</h3>
+              <h3 class="ml-2 w-9/12 address_desc">
+                Tower Pase, Gana, India, 965712
+              </h3>
+              <div class="flex">
+                <h3 class="add_edit">Edit</h3>
+                <div class="centerdiv"></div>
+                <h3 class="add_del">Delete</h3>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 flex items-center justify-between">
+            <div class="flex items-center justify-center">
+              <img width="18px" src="./image/back_cart.svg" alt="" />
+              <h3 class="ml-2 back_cart">BACK TO CART</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden sm:block" aria-hidden="true">
+          <div class="py-5">
+            <div class="border-t border-gray-200"></div>
+          </div>
+        </div>
+        <div class="cart_main pl-4 py-2 w-2/5">
+          <div class="bg-[#FFFFFF] drop-shadow rounded-lg">
+            <div class="py-4 px-8 flex items-center justify-between">
+              <div class="flex items-center">
+                <div class="h-4 w-2 bg-[#FED500]"></div>
+                <h3 class="ml-1 cart_summary">Cart Summary</h3>
+              </div>
+              <div class="bg-[#FAFAFA] rounded-xl">
+                <h3 class="product_price text-lg py-2 px-4">
+                  4 <span class="text-base font-medium">items</span>
+                </h3>
+              </div>
+            </div>
+
+            <!-- First Subtotal -->
+            <div class="px-8 flex items-center justify-between">
+              <h3 class="total">Subtotal</h3>
+              <h3 class="product_price font-medium text-base py-2 px-4">
+                ₹ <span class="side_price text-lg">350</span>
+              </h3>
+            </div>
+            <!-- You Save -->
+            <div class="px-8 flex items-center justify-between">
+              <h3 class="total">You Save</h3>
+              <h3 class="product_price font-medium text-base py-1 px-4">
+                ₹ <span class="side_save text-lg">100</span>
+              </h3>
+            </div>
+            <hr class="line_total" />
+            <div class="px-8 flex items-center justify-between">
+              <h3 class="total">Order Summary</h3>
+              <h3 class="product_price font-medium text-base py-1 px-4">
+                ₹ <span class="side_price text-lg">254</span>
+              </h3>
+            </div>
+            <div class="px-8 flex items-center justify-between">
+              <h3 class="total">Shipping</h3>
+              <h3 class="product_price font-medium text-base py-1 px-4">
+                ₹ <span class="side_price text-lg">40</span>
+              </h3>
+            </div>
+            <div class="relative">
+              <div class="icon"></div>
+              <hr class="line_total" />
+            </div>
+            <div class="px-8 flex items-center justify-between">
+              <h3 class="last_total">Total</h3>
+              <h3 class="product_price font-medium text-base py-2 px-4">
+                ₹ <span class="side_price text-2xl">274</span>
+              </h3>
+            </div>
+            <div class="px-10 py-4 flex items-center justify-center">
+              <button
+                class="pr-1 pl-10 flex items-center justify-between bg-[#118834] h-14 tracking-wide rounded-lg last_checkout w-3/4"
+              >
+                CONFIRM ADDRESS
+                <div
+                  class="flex items-center justify-center rounded-lg w-12 bg-[#299549] h-12"
+                >
+                  <img width="22px" src="image/arrowright.svg" />
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Div End for cart_main class -->
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- old summary -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Shipping</title>
+  </head>
+  <body class="bg-[#FAFAFA]">
+    <div class="px-8">
+      <div class="py-4">
+        <div
+          class="bg-[#FFFFFF] flex items-center justify-between drop-shadow-sm rounded-xl p-8"
+        >
+          <div>
+            <h2 class="logo text-3xl font-bold">Metlic</h2>
+          </div>
+          <div class="flex">
+            <div class="p-4 bg-[#F7F7F7] rounded-lg">
+              <img width="22px" src="./image/CartNav.svg" alt="cart-icon" />
+            </div>
+            <div class="flex ml-2 rounded-lg items-center p-4 bg-[#F7F7F7]">
+              <img width="25px" src="./image/usernav.svg" alt="User-icon" />
+              <h4 class="flex ml-2">
+                Hello,<span class="hello mx-2">Jhon</span
+                ><img width="20px" src="./image/arrowdownnav.svg" alt="arrow" />
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- This is track System -->
+      <div class="px-24">
+        <div
+          class="bg-[#FFFFFF] flex items-center justify-center drop-shadow-sm rounded-xl p-6"
+        >
+          <div class="flex items-center">
+            <div class="mr-4 cart-round rounded-full bg-[#2A954A] p-2">
+              <img width="22px" src="./image/success.svg" alt="cart" />
+            </div>
+            <h3 class="track_cart">Your Cart</h3>
+          </div>
+          <hr class="shipping_first_line mx-2" />
+
+          <div class="flex items-center">
+            <div class="mr-4 cart-round rounded-full bg-[#2A954A] p-2">
+              <img width="22px" src="./image/success.svg" alt="cart" />
+            </div>
+            <h3 class="shipping_track_shipping">Shipping Detail</h3>
+          </div>
+          <hr class="summ_third_line mx-2" />
+          <div class="flex items-center">
+            <div class="mr-4 rounded-full cart-round bg-[#F7F7F7] p-4">
+              <img width="22px" src="./image/paymenttrack.svg" alt="cart" />
+            </div>
+            <h3 class="shipping_track_shipping">Payment</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cart Items -->
+      <div class="flex px-24">
+        <div class="w-2/3 py-2">
+          <div class="px-4 py-5 bg-white rounded-lg drop-shadow sm:p-6">
+            <div class="flex items-center">
+              <div class="h-4 w-2 bg-[#FED500]"></div>
+              <h3 class="ml-2 shipping_title">Shipping Address</h3>
+            </div>
+            <div class="flex justify-between p-3">
+              <h3 class="title w-80">Products</h3>
+              <h3 class="title">QTY</h3>
+              <h3 class="title">Total Price</h3>
+            </div>
+
+            <div
+              class="flex justify-between items-center bg-[#FAFAFA] rounded p-4"
+            >
+              <h3 class="w-72 summ_name">Orange and apple smoothie, 150ml</h3>
+              <h3 class="summ_qty">1</h3>
+              <h3 class="summ_price">$ 120</h3>
+            </div>
+            <div
+              class="flex mt-3 justify-between items-center bg-[#FAFAFA] rounded p-4"
+            >
+              <h3 class="w-72 truncate summ_name">
+                Sunscreen soultion containing almond extract and honey for oily
+                skin
+              </h3>
+              <h3 class="summ_qty">1</h3>
+              <h3 class="summ_price">$ 60</h3>
+            </div>
+            <div
+              class="flex mt-3 justify-between items-center bg-[#FAFAFA] rounded p-4"
+            >
+              <h3 class="w-72 truncate summ_name">
+                Sunscreen soultion containing almond extract and wheat germ skin
+              </h3>
+              <h3 class="summ_qty">1</h3>
+              <h3 class="summ_price">$ 54</h3>
+            </div>
+            <div
+              class="flex mt-3 justify-between items-center bg-[#FAFAFA] rounded p-4"
+            >
+              <h3 class="w-72 truncate summ_name">
+                Oat granola with Dried Cherries, Pecans and Coconut Chips
+              </h3>
+              <h3 class="summ_qty">1</h3>
+              <h3 class="summ_price">$ 54</h3>
+            </div>
+            <div class="">
+              <div class="flex mt-8 items-center">
+                <div class="h-4 w-2 bg-[#FED500]"></div>
+                <h3 class="ml-2 shipping_title">Billing Summary</h3>
+              </div>
+              <div class="summ_dec ml-2 mt-6">
+                This is order will send by
+                <span class="summ_del">FedEx Fast Delivery</span> to
+                <span class="summ_del"
+                  >Jhon Doe, No.14, 1403 Villa Drive Plymouth, IN.</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 px-4 py-5 rounded-lg drop-shadow bg-white sm:p-6">
+            <div class="flex items-center">
+              <div class="h-4 w-2 bg-[#FED500]"></div>
+              <h3 class="ml-2 summ_code">Coupon Code</h3>
+            </div>
+            <div class="hidden grid grid-cols-6 gap-6 mt-6">
+              <div class="col-span-6 sm:col-span-3">
+                <input
+                  id="contact"
+                  name="mobile_no"
+                  type="text"
+                  autocomplete="name"
+                  required=""
+                  placeholder="Coupon Code"
+                  class="relative block w-full px-5 py-3 text-base text-neutral-600 placeholder-[#8C9395] transition duration-500 ease-in-out transform border border-[#8C9395] rounded-lg focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#118834]"
+                />
+              </div>
+              <div class="flex justify-center">
+                <button
+                  class="p-4 flex items-center justify-between bg-[#118834] h-12 tracking-wide rounded-lg coupon_code"
+                >
+                  Apply
+                  <img class="ml-3" width="22px" src="image/code.svg" />
+                </button>
+              </div>
+            </div>
+            <div class="flex items-center ml-2 mt-6">
+              <h3 class="summ_dec">Your Coupon code applied successfully</h3>
+              <span class="summ_del ml-4">FIRST50</span>
+              <span class="ml-10 summ_remove">Remove coupon</span>
+            </div>
+          </div>
+          <div class="mt-6 flex items-center justify-between">
+            <div class="flex items-center justify-center">
+              <img width="18px" src="./image/back_cart.svg" alt="" />
+              <h3 class="ml-2 back_cart">BACK TO SHIPPING DETAILS</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden sm:block" aria-hidden="true">
+          <div class="py-5">
+            <div class="border-t border-gray-200"></div>
+          </div>
+        </div>
+        <div class="cart_main px-4 py-2 w-2/5">
+          <div class="bg-[#FFFFFF] drop-shadow rounded-lg">
+            <div class="py-4 px-8 flex items-center justify-between">
+              <div class="flex items-center">
+                <div class="h-4 w-2 bg-[#FED500]"></div>
+                <h3 class="ml-1 cart_summary">Cart Summary</h3>
+              </div>
+              <div class="bg-[#FAFAFA] rounded-xl">
+                <h3 class="product_price text-lg py-2 px-4">
+                  4 <span class="text-base font-medium">items</span>
+                </h3>
+              </div>
+            </div>
+
+            <!-- First Subtotal -->
+            <div class="px-8 flex items-center justify-between">
+              <h3 class="total">Subtotal</h3>
+              <h3 class="product_price font-medium text-base py-2 px-4">
+                ₹ <span class="side_price text-lg">350</span>
+              </h3>
+            </div>
+            <!-- You Save -->
+            <div class="px-8 flex items-center justify-between">
+              <h3 class="total">You Save</h3>
+              <h3 class="product_price font-medium text-base py-2 px-4">
+                ₹ <span class="side_save text-lg">100</span>
+              </h3>
+            </div>
+            <hr class="line_total" />
+            <div class="px-8 flex items-center justify-between">
+              <h3 class="total">Order Summary</h3>
+              <h3 class="product_price font-medium text-base py-2 px-4">
+                ₹ <span class="side_price text-lg">254</span>
+              </h3>
+            </div>
+            <div class="px-8 flex items-center justify-between">
+              <h3 class="total">Shipping</h3>
+              <h3 class="product_price font-medium text-base py-2 px-4">
+                ₹ <span class="side_price text-lg">40</span>
+              </h3>
+            </div>
+            <div class="relative">
+              <div class="icon"></div>
+              <hr class="line_total" />
+            </div>
+            <div class="px-8 flex items-center justify-between">
+              <h3 class="last_total">Total</h3>
+              <h3 class="product_price font-medium text-base py-2 px-4">
+                ₹ <span class="side_price text-2xl">274</span>
+              </h3>
+            </div>
+            <div class="px-10 py-4 flex items-center justify-center">
+              <button
+                class="pr-1 pl-10 flex items-center justify-between bg-[#118834] h-14 tracking-wide rounded-lg last_checkout w-3/4"
+              >
+                CONFIRM AND PAY
+                <div
+                  class="flex items-center justify-center rounded-lg w-12 bg-[#299549] h-12"
+                >
+                  <img width="22px" src="image/arrowright.svg" />
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Div End for cart_main class -->
+      </div>
+    </div>
+  </body>
+</html>

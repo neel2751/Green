@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Shipping</title>
+  </head>
+  <body class="bg-[#FAFAFA]">
+    <div class="lg:px-8 px-2">
+      <div class="lg:py-4 py-2">
+        <div
+          class="bg-[#FFFFFF] flex items-center justify-between drop-shadow-sm rounded-xl lg:p-8 p-4"
+        >
+          <div>
+            <h2 class="logo lg:text-3xl text-md font-bold">Metlic</h2>
+          </div>
+          <div class="flex items-center justify-center">
+            <label>
+              <input
+                class="search appearance-none rounded lg:ml-4 lg:pl-10 lg:p-4 lg:pl-8 pl-6 p-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                name="serach"
+                type="text"
+                placeholder="Search in Amazing Product..."
+              />
+            </label>
+          </div>
+          <!-- This is svg for close menu -->
+          <div class="">
+            <div class="-mr-2 -my-2 md:hidden">
+              <button
+                class="mobile-menu-button bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                aria-expanded="false"
+              >
+                <svg
+                  class="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="sm:block hidden md:flex lg:flex">
+              <div class="p-4 bg-[#F7F7F7] rounded-lg">
+                <img width="22px" src="./image/CartNav.svg" alt="cart-icon" />
+              </div>
+              <div class="flex ml-2 rounded-lg items-center p-4 bg-[#F7F7F7]">
+                <img width="25px" src="./image/usernav.svg" alt="User-icon" />
+                <h4 class="flex ml-2">
+                  Hello,<span class="hello mx-2">Jhon</span
+                  ><img
+                    width="20px"
+                    src="./image/arrowdownnav.svg"
+                    alt="arrow"
+                  />
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- This is track System -->
+      <div class="lg:px-24">
+        <div
+          class="bg-[#FFFFFF] flex items-center lg:justify-center justify-between drop-shadow-sm rounded-xl lg:p-6 p-2"
+        >
+          <div class="flex items-center">
+            <div
+              class="lg:mr-4 mr-1 cart-round rounded-full bg-[#2A954A] lg:p-2 p-1"
+            >
+              <img class="add_success" src="./image/success.svg" alt="cart" />
+            </div>
+            <h3 class="track_cart">Your Cart</h3>
+          </div>
+          <hr class="shipping_first_line lg:mx-2" />
+
+          <div class="flex items-center">
+            <div
+              class="lg:mr-4 mr-1 cart-round rounded-full bg-[#F7F7F7] lg:p-4 p-1"
+            >
+              <img
+                class="add_success"
+                src="./image/trackshipping.svg"
+                alt="cart"
+              />
+            </div>
+            <h3 class="shipping_track_shipping">Shipping Detail</h3>
+          </div>
+          <hr class="shipping_third_line lg:mx-2" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="add_arrow_svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="#128935"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            ></path>
+          </svg>
+
+          <hr class="second_line lg:mx-2" />
+          <div class="flex items-center">
+            <div class="lg:mr-4 mr-1 rounded-full bg-[#F7F7F7] lg:p-4 p-1">
+              <img class="add_success" src="./image/payment.svg" alt="cart" />
+            </div>
+            <h3 class="track_shipping">Payment</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cart Items -->
+      <div class="lg:flex">
+        <div class="lg:w-2/3 w-full py-2">
+          <div class="lg:px-4 px-2 py-5 bg-white rounded-lg drop-shadow sm:p-6">
+            <div class="flex items-center">
+              <div class="h-4 w-2 bg-[#FED500]"></div>
+              <h3 class="ml-2 shipping_title">Shipping Address</h3>
+            </div>
+            <div class="mt-2 bg-white text-right">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                  <button
+                    class="pr-1 pl-4 flex items-center justify-between bg-[#118834] lg:h-10 h-8 tracking-wide rounded-md add_new_btn lg:w-48 w-36"
+                  >
+                    ADD NEW ADDRESS
+                    <div
+                      class="flex items-center justify-center rounded-md w-6 lg:h-8 lg:w-8 bg-[#299549] h-6"
+                    >
+                      <img
+                        class="img_plus"
+                        width="24px"
+                        src="image/add_plus.svg"
+                      />
+                    </div>
+                  </button>
+                </div>
+                <!-- Add new Address Button End -->
+              </div>
+            </div>
+            <!-- First Address Start -->
+            <div
+              class="mt-4 flex items-center justify-between bg-[#FAFAFA] rounded lg:p-4 p-2"
+            >
+              <div class="flex items-center">
+                <div
+                  class="mr-2 flex items-center rounded-full bg-[#2A954A] p-1"
+                >
+                  <img width="12px" src="image/success.svg" />
+                </div>
+
+                <h3 class="summ_name">Jhon Doe</h3>
+              </div>
+              <h3 class="lg:ml-2 mx-2 address_desc">
+                144 New tower near, Delhi, India, 420145
+              </h3>
+              <div class="flex">
+                <h3 class="add_edit">Edit</h3>
+                <div class="centerdiv"></div>
+                <h3 class="add_del">Delete</h3>
+              </div>
+            </div>
+            <!-- Second Address Start -->
+            <div
+              class="mt-4 flex items-center justify-between bg-[#FAFAFA] rounded lg:p-4 p-2"
+            >
+              <div class="flex items-center">
+                <div
+                  class="mr-2 flex items-center rounded-full bg-[#2A954A] p-1"
+                >
+                  <img width="12px" src="image/success.svg" />
+                </div>
+                <h3 class="summ_name">Vicky Patel</h3>
+              </div>
+              <h3 class="lg:ml-2 mx-2 address_desc">
+                B-26 behind Bazar, BilasPur, India, 384213
+              </h3>
+              <div class="flex items-center">
+                <h3 class="add_edit">Edit</h3>
+                <div class="centerdiv"></div>
+                <h3 class="add_del">Delete</h3>
+              </div>
+            </div>
+            <!-- Third address start  -->
+            <div
+              class="mt-6 flex items-center justify-between bg-[#FAFAFA] rounded lg:p-4 p-2"
+            >
+              <div class="flex items-center">
+                <div
+                  class="mr-2 flex items-center rounded-full bg-[#2A954A] p-1"
+                >
+                  <img width="12px" src="image/success.svg" />
+                </div>
+                <h3 class="summ_name">Meet Shah</h3>
+              </div>
+              <h3 class="lg:ml-2 mx-2 address_desc">
+                Tower Pase, Gana, India, 965712
+              </h3>
+              <div class="flex">
+                <h3 class="add_edit">Edit</h3>
+                <div class="centerdiv"></div>
+                <h3 class="add_del">Delete</h3>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 flex items-center justify-between">
+            <div class="flex items-center justify-center">
+              <img width="18px" src="./image/back_cart.svg" alt="" />
+              <h3 class="ml-2 back_cart">BACK TO CART</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden sm:block" aria-hidden="true">
+          <div class="py-5">
+            <div class="border-t border-gray-200"></div>
+          </div>
+        </div>
+        <div class="cart_main lg:pl-4 py-2 lg:w-2/5 w-full">
+          <div class="bg-[#FFFFFF] drop-shadow rounded-lg">
+            <div
+              class="lg:py-4 lg:px-8 px-4 py-2 flex items-center justify-between"
+            >
+              <div class="flex items-center">
+                <div class="h-4 w-2 bg-[#FED500]"></div>
+                <h3 class="ml-1 cart_summary">Cart Summary</h3>
+              </div>
+              <div class="bg-[#FAFAFA] rounded-xl">
+                <h3 class="product_price text-lg py-2 lg:px-4 px-2">
+                  4 <span class="text-base font-medium">items</span>
+                </h3>
+              </div>
+            </div>
+
+            <!-- First Subtotal -->
+            <div class="lg:px-8 px-4 flex items-center justify-between">
+              <h3 class="total">Subtotal</h3>
+              <h3 class="product_price font-medium text-base py-2 lg:px-4 px-2">
+                ₹ <span class="side_price text-lg">350</span>
+              </h3>
+            </div>
+            <!-- You Save -->
+            <div class="lg:px-8 px-4 flex items-center justify-between">
+              <h3 class="total">You Save</h3>
+              <h3 class="product_price font-medium text-base py-1 lg:px-4 px-2">
+                ₹ <span class="side_save text-lg">100</span>
+              </h3>
+            </div>
+            <hr class="line_total" />
+            <div class="lg:px-8 px-4 flex items-center justify-between">
+              <h3 class="total">Order Summary</h3>
+              <h3 class="product_price font-medium text-base py-1 lg:px-4 px-2">
+                ₹ <span class="side_price text-lg">254</span>
+              </h3>
+            </div>
+            <div class="lg:px-8 px-4 flex items-center justify-between">
+              <h3 class="total">Shipping</h3>
+              <h3 class="product_price font-medium text-base py-1 lg:px-4 px-2">
+                ₹ <span class="side_price text-lg">40</span>
+              </h3>
+            </div>
+            <div class="relative">
+              <div class="icon"></div>
+              <hr class="line_total" />
+            </div>
+            <div class="lg:px-8 px-4 flex items-center justify-between">
+              <h3 class="last_total">Total</h3>
+              <h3 class="product_price font-medium text-base py-2 lg:px-4 px-2">
+                ₹ <span class="side_price text-2xl">274</span>
+              </h3>
+            </div>
+            <a href="summary.html">
+              <div
+                class="lg:px-10 lg:py-4 px-4 py-2 flex items-center justify-center"
+              >
+                <button
+                  class="pr-1 lg:pl-10 pl-5 flex items-center justify-between bg-[#118834] lg:h-14 h-12 tracking-wide rounded-lg last_checkout w-52 lg:w-64"
+                >
+                  CONFIRM ADDRESS
+                  <div
+                    class="flex items-center justify-center rounded-lg lg:w-12 w-10 bg-[#299549] lg:h-12 h-10"
+                  >
+                    <img width="22px" src="image/arrowright.svg" />
+                  </div>
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Div End for cart_main class -->
+      </div>
+    </div>
+  </body>
+</html>

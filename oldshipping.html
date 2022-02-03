@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Shipping</title>
+  </head>
+  <body class="bg-[#FAFAFA]">
+    <div class="px-8">
+      <div class="py-4">
+        <div
+          class="bg-[#FFFFFF] flex items-center justify-between drop-shadow-sm rounded-xl p-8"
+        >
+          <div>
+            <h2 class="logo text-3xl font-bold">Metlic</h2>
+          </div>
+          <div class="flex">
+            <div class="p-4 bg-[#F7F7F7] rounded-lg">
+              <img width="22px" src="./image/CartNav.svg" alt="cart-icon" />
+            </div>
+            <div class="flex ml-2 rounded-lg items-center p-4 bg-[#F7F7F7]">
+              <img width="25px" src="./image/usernav.svg" alt="User-icon" />
+              <h4 class="flex ml-2">
+                Hello,<span class="hello mx-2">Jhon</span
+                ><img width="20px" src="./image/arrowdownnav.svg" alt="arrow" />
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- This is track System -->
+      <div class="px-24">
+        <div
+          class="bg-[#FFFFFF] flex items-center justify-center drop-shadow-sm rounded-xl p-6"
+        >
+          <div class="flex items-center">
+            <div class="mr-4 cart-round rounded-full bg-[#2A954A] p-2">
+              <img width="22px" src="./image/success.svg" alt="cart" />
+            </div>
+            <h3 class="track_cart">Your Cart</h3>
+          </div>
+          <hr class="shipping_first_line mx-2" />
+
+          <div class="flex items-center">
+            <div class="mr-4 cart-round rounded-full bg-[#F7F7F7] p-4">
+              <img width="22px" src="./image/trackshipping.svg" alt="cart" />
+            </div>
+            <h3 class="shipping_track_shipping">Shipping Detail</h3>
+          </div>
+          <hr class="shipping_third_line mx-2" />
+          <svg
+            style="margin: -15px; height: 15px"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="#128935"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+          <hr class="second_line mx-2" />
+          <div class="flex items-center">
+            <div class="mr-4 rounded-full bg-[#F7F7F7] p-4">
+              <img width="22px" src="./image/payment.svg" alt="cart" />
+            </div>
+            <h3 class="track_shipping">Payment</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cart Items -->
+      <div class="flex">
+        <div class="w-2/3 py-2">
+          <div class="">
+            <div class="mt-5 md:mt-0 md:col-span-2">
+              <form action="#" method="POST">
+                <div class="shadow overflow-hidden sm:rounded-md">
+                  <div class="px-4 py-5 bg-white sm:p-6">
+                    <div class="flex items-center">
+                      <div class="h-4 w-2 bg-[#FED500]"></div>
+                      <h3 class="ml-1 shipping_title">Shipping Address</h3>
+                    </div>
+                    <div class="flex mt-8 mx-8">
+                      <img
+                        width="50px"
+                        src="./image/NotAddress.svg"
+                        alt="Address"
+                      />
+                      <div class="flex flex-col p-1 justify-between">
+                        <h3 class="add_tittle">
+                          You haven't set any address yet!
+                        </h3>
+                        <h3 class="below_address">
+                          By using below form, add your first Address
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="grid grid-cols-6 gap-6 m-8">
+                      <div class="relative col-span-6 sm:col-span-3">
+                        <input
+                          id="contact"
+                          name="mobile_no"
+                          type="text"
+                          autocomplete="name"
+                          required=""
+                          placeholder="Full Name"
+                          class="relative block w-full px-5 py-3 text-base text-neutral-600 placeholder-[#8C9395] transition duration-500 ease-in-out transform border border-[#8C9395] rounded-lg focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#118834]"
+                        />
+                      </div>
+                      <div class="col-span-6 sm:col-span-3">
+                        <input
+                          id="contact"
+                          name="mobile_no"
+                          type="text"
+                          autocomplete="mobile"
+                          required=""
+                          placeholder="Phone Number"
+                          class="block w-full px-5 py-3 text-base text-neutral-600 placeholder-[#8C9395] transition duration-500 ease-in-out transform border border-[#8C9395] rounded-lg focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#118834]"
+                        />
+                      </div>
+                      <div class="col-span-6 sm:col-span-3">
+                        <select
+                          id="country"
+                          name="country"
+                          autocomplete="country-name"
+                          class="block w-full px-5 py-3 text-base text-neutral-600 placeholder-[#8C9395] transition duration-500 ease-in-out transform border border-[#8C9395] rounded-lg focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#118834]"
+                        >
+                          <option disabled selected>Select State...</option>
+                          <option>United States</option>
+                          <option>Canada</option>
+                          <option>Mexico</option>
+                        </select>
+                      </div>
+                      <div class="col-span-6 sm:col-span-3">
+                        <select
+                          id="country"
+                          name="country"
+                          autocomplete="country-name"
+                          class="block w-full px-5 py-3 text-base text-neutral-600 placeholder-[#8C9395] transition duration-500 ease-in-out transform border border-[#8C9395] rounded-lg focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#118834]"
+                        >
+                          <option disabled selected>Select City...</option>
+                          <option>United States</option>
+                          <option>Canada</option>
+                          <option>Mexico</option>
+                        </select>
+                      </div>
+
+                      <div class="col-span-6 sm:col-span-6">
+                        <textarea
+                          type="text"
+                          placeholder="Billing Address"
+                          class="text_area form-control block w-full px-5 py-3 text-base text-neutral-600 placeholder-[#8C9395] transition duration-500 ease-in-out transform border border-[#8C9395] rounded-lg focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#118834]"
+                        ></textarea>
+                      </div>
+                      <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                        <input
+                          id="country"
+                          name="email"
+                          type="text"
+                          autocomplete="country"
+                          required=""
+                          placeholder="Town"
+                          class="block w-full px-5 py-3 text-base text-neutral-600 placeholder-[#8C9395] transition duration-500 ease-in-out transform border border-[#8C9395] rounded-lg focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#118834]"
+                        />
+                      </div>
+
+                      <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                        <input
+                          id="lendmark"
+                          name="lendmark"
+                          type="text"
+                          autocomplete="email"
+                          required=""
+                          placeholder="Lendmark"
+                          class="block w-full px-5 py-3 text-base text-neutral-600 placeholder-[#8C9395] transition duration-500 ease-in-out transform border border-[#8C9395] rounded-lg focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#118834]"
+                        />
+                      </div>
+
+                      <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                        <input
+                          id="pincode"
+                          name="pincode"
+                          type="text"
+                          autocomplete="postal-code"
+                          required=""
+                          placeholder="Postal Code"
+                          class="block w-full px-5 py-3 text-base text-neutral-600 placeholder-[#8C9395] transition duration-500 ease-in-out transform border border-[#8C9395] rounded-lg focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#118834]"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-white text-right sm:px-6">
+                    <div class="flex items-center justify-between">
+                      <div class="ml-8 flex items-center justify-center">
+                        <img width="18px" src="./image/back_cart.svg" alt="" />
+                        <h3 class="ml-2 back_cart">BACK TO CART</h3>
+                      </div>
+                      <div class="px-10 py-4 flex items-center justify-end">
+                        <button
+                          class="pr-1 pl-6 flex items-center justify-between bg-[#118834] h-12 tracking-wide rounded-lg add_btn w-56"
+                        >
+                          ADD NEW ADDRESS
+                          <div
+                            class="flex items-center justify-center rounded-lg w-10 bg-[#299549] h-10"
+                          >
+                            <img
+                              class="img_plus"
+                              width="27px"
+                              src="image/add_plus.svg"
+                            />
+                          </div>
+                        </button>
+                      </div>
+                      <!-- Add new Address Button End -->
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden sm:block" aria-hidden="true">
+          <div class="py-5">
+            <div class="border-t border-gray-200"></div>
+          </div>
+        </div>
+        <div class="cart_main px-4 py-2 w-2/5">
+          <div class="bg-[#FFFFFF] drop-shadow rounded-lg">
+            <div class="py-4 px-8 flex items-center justify-between">
+              <div class="flex items-center">
+                <div class="h-4 w-2 bg-[#FED500]"></div>
+                <h3 class="ml-1 cart_summary">Cart Summary</h3>
+              </div>
+              <div class="bg-[#FAFAFA] rounded-xl">
+                <h3 class="product_price text-lg py-2 px-4">
+                  4 <span class="text-base font-medium">items</span>
+                </h3>
+              </div>
+            </div>
+
+            <!-- First Subtotal -->
+            <div class="px-8 flex items-center justify-between">
+              <h3 class="total">Subtotal</h3>
+              <h3 class="product_price font-medium text-base py-2 px-4">
+                ₹ <span class="side_price text-lg">350</span>
+              </h3>
+            </div>
+            <!-- You Save -->
+            <div class="px-8 flex items-center justify-between">
+              <h3 class="total">You Save</h3>
+              <h3 class="product_price font-medium text-base py-2 px-4">
+                ₹ <span class="side_save text-lg">100</span>
+              </h3>
+            </div>
+            <hr class="line_total" />
+            <div class="px-8 flex items-center justify-between">
+              <h3 class="total">Order Summary</h3>
+              <h3 class="product_price font-medium text-base py-2 px-4">
+                ₹ <span class="side_price text-lg">254</span>
+              </h3>
+            </div>
+            <div class="px-8 flex items-center justify-between">
+              <h3 class="total">Shipping</h3>
+              <h3 class="product_price font-medium text-base py-2 px-4">
+                ₹ <span class="side_price text-lg">40</span>
+              </h3>
+            </div>
+            <div class="relative">
+              <div class="icon"></div>
+              <hr class="line_total" />
+            </div>
+            <div class="px-8 flex items-center justify-between">
+              <h3 class="last_total">Total</h3>
+              <h3 class="product_price font-medium text-base py-2 px-4">
+                ₹ <span class="side_price text-2xl">274</span>
+              </h3>
+            </div>
+            <div class="px-10 py-4 flex items-center justify-center">
+              <button
+                class="flex items-center justify-evenly bg-[#F0F0F0] checkout h-14 btn_confirm tracking-wide rounded-lg w-3/4"
+              >
+                CONFIRM BILLING ADDRESS
+                <img width="28px" src="image/add_arrow_right.svg" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Div End for cart_main class -->
+      </div>
+    </div>
+    <!-- <lottie-player
+      src="https://assets1.lottiefiles.com/packages/lf20_fLbCr0.json"
+      background="transparent"
+      speed="1"
+      style="width: 300px; height: 300px"
+      hover
+    ></lottie-player> -->
+    <!-- <lottie-player
+      src="https://assets9.lottiefiles.com/packages/lf20_by08roec.json"
+      mode="bounce"
+      background="transparent"
+      speed="1"
+      style="width: 300px; height: 300px"
+      hover
+    ></lottie-player> -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </body>
+</html>
